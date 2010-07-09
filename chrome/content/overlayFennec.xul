@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+         id="barcodize-overlay"
+         windowtype="barcodize:overlay"
+	 onload="">
+         
+  <script type="application/javascript" src="chrome://barcodize/content/overlayFennec.js" />    
+  
+  <vbox id="identity-container">
+    <hbox id="pageactions-container" insertafter="pageactions-container" class="window-width">
+      <pageaction title="Barcodize" description="this url" type="barcodize" 
+                  onclick="barcodize_opentab();"/>
+    </hbox>
+  </vbox>
+  
+</overlay>

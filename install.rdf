@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>barcodize@alcacoop.it</em:id>
+    <em:version>0.1</em:version>
+    <em:type>2</em:type>
+
+    <!-- Target Application this extension can install into, 
+         with minimum and maximum supported versions. --> 
+
+    <!-- Fennec -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>1.1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:name>Barcodize</em:name>
+    <em:description>Barcodize Page Action for Firefox Mobile</em:description>
+    <em:creator>Luca Greco (http://ubik.cc/) &lt;luca.greco@alcacoop.it&gt;</em:creator>
+  </Description>
+</RDF>

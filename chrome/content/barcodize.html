@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Barcodize for Firefox Mobile</title>
+  <script>
+    window.onload = function onload() {
+      var url =  window.location.hash.slice(1);
+      document.getElementById("barcode").setAttribute("src", 
+        "http://chart.apis.google.com/chart?cht=qr&chld=M|4&choe=UTF-8&chs=300x300&chl="+
+        url
+      );
+      document.getElementById("barcodized_url").textContent = url;
+    }
+  </script>
+</head>
+<body>
+  <div style="float: left; width: 48%;">
+    <img id="barcode" 
+         src="http://chart.apis.google.com/chart?cht=qr&chld=M|4&choe=UTF-8&chs=300x300&chl=Loading..."/>
+    <br/>
+    <center>
+      <i id="barcodized_url">Loading...</i>
+    </center>
+  </div>
+  <div style="float: left; width: 48%;">
+    <center>
+      <h1>
+        Barcodize for Firefox Mobile
+      </h1>
+      <br/>
+      <i>brought to you by</i>
+      <br/>
+      <h2>
+        Labs @ ALCACOOP
+      </h2>
+      <br/>
+      <h1>
+        <a href="chrome://barcodize/content/get_barcodize.html"
+           style="color: white; background-color: black; -moz-border-radius: 6px; padding: 4px; text-decoration: none; font-weight: bold; -moz-box-shadow: 4px 4px 5px #888;">
+          DOWNLOAD
+        </a>
+      </h1>
+    </center>
+  </div>
+</body>
+</html>
